@@ -14,10 +14,9 @@ Built a company discovery map covering 5 major Indian tech hubs that has reached
 Built and shipped multiple full-stack products for developer collaboration, code sharing, AI workflows, and company discovery
 Worked with a US-based startup (Thinkact AI) to build a document management system for processing different tax forms, including Forms 1065 and 1120.
 
-what I care about
-Building products people actually use
-Simple, usable interfaces
-Reliable and scalable backend systems
-Using AI where it genuinely improves a workflow
+***what I care about***
+- Building products people actually use
+- Simple, usable interfaces
+- Reliable and scalable backend systems
+- Using AI where it genuinely improves a workflow
 
-find me
