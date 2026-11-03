@@ -1,139 +1,124 @@
-# 🦀 Rust Programming Language
+# 🌐 HTML (HyperText Markup Language)
 
 ## Introduction
-Rust is a systems programming language focused on performance, memory safety, and concurrency without requiring a garbage collector.
+HTML is the standard markup language used to structure content on web pages. It defines elements such as headings, paragraphs, images, links, and forms.
 
-## Variables
-```rust
-fn main() {
-    let name = "Utkarsh";
-    let mut age = 22;
-    age = 23;
-
-    const PI: f64 = 3.14;
-}
+## Basic HTML Structure
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Welcome to HTML.</p>
+</body>
+</html>
 ```
 
-## Data Types
-- Integer: `i32`, `i64`, `u32`
-- Float: `f32`, `f64`
-- Boolean: `bool`
-- Character: `char`
-- String: `String`, `&str`
-- Tuple
-- Array
-- Vector
-
-## Functions
-```rust
-fn add(a: i32, b: i32) -> i32 {
-    a + b
-}
-
-fn main() {
-    println!("{}", add(10, 20));
-}
+## HTML Headings
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
 ```
 
-## Conditions
-```rust
-let age = 20;
-
-if age >= 18 {
-    println!("Adult");
-} else {
-    println!("Minor");
-}
+## Text Formatting
+```html
+<b>Bold Text</b>
+<strong>Important Text</strong>
+<i>Italic Text</i>
+<em>Emphasized Text</em>
+<u>Underlined Text</u>
+<mark>Highlighted Text</mark>
+<del>Deleted Text</del>
 ```
 
-## Loops
-```rust
-for i in 0..5 {
-    println!("{}", i);
-}
+## Links and Images
+```html
+<a href="https://google.com">Visit Google</a>
 
-let mut count = 0;
-
-while count < 5 {
-    println!("{}", count);
-    count += 1;
-}
+<img src="image.jpg" alt="Sample Image">
 ```
 
-## Arrays and Vectors
-```rust
-let arr = [10, 20, 30];
+## Lists
+```html
+<!-- Ordered List -->
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+</ol>
 
-let mut nums = vec![1, 2, 3];
-nums.push(4);
+<!-- Unordered List -->
+<ul>
+    <li>JavaScript</li>
+    <li>React</li>
+</ul>
 ```
 
-## Structs
-```rust
-struct User {
-    name: String,
-    age: u32,
-}
-
-fn main() {
-    let user = User {
-        name: String::from("Utkarsh"),
-        age: 22,
-    };
-}
+## Tables
+```html
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Utkarsh</td>
+        <td>22</td>
+    </tr>
+</table>
 ```
 
-## Ownership and Borrowing
-Rust uses ownership rules to ensure memory safety.
-
-```rust
-let name = String::from("Rust");
-
-let borrowed = &name;      // Immutable borrow
-let mutable = &mut String::from("Hello"); // Mutable borrow
+## Forms
+```html
+<form>
+    <input type="text" placeholder="Enter Name">
+    <input type="email" placeholder="Enter Email">
+    <input type="password" placeholder="Enter Password">
+    <button type="submit">Submit</button>
+</form>
 ```
 
-## Pattern Matching
-```rust
-let number = 2;
+## Semantic HTML
+- `<header>` – Header section
+- `<nav>` – Navigation links
+- `<main>` – Main content
+- `<section>` – Content section
+- `<article>` – Independent content
+- `<aside>` – Sidebar content
+- `<footer>` – Footer section
 
-match number {
-    1 => println!("One"),
-    2 => println!("Two"),
-    _ => println!("Other"),
-}
+## Media Elements
+```html
+<video controls>
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
 ```
 
-## Error Handling
-```rust
-fn divide(a: f64, b: f64) -> Result<f64, String> {
-    if b == 0.0 {
-        Err(String::from("Division by zero"))
-    } else {
-        Ok(a / b)
-    }
-}
-```
-
-## Important Concepts
-- Ownership
-- Borrowing
-- References
-- Lifetimes
-- Structs and Enums
-- Pattern Matching
-- Traits
-- Generics
-- Option and Result
-- Cargo and Crates
-- Concurrency
-- Smart Pointers
+## Important HTML Concepts
+- HTML Elements and Attributes
+- Block vs Inline Elements
+- Semantic HTML
+- Forms and Input Types
+- HTML5 APIs
+- Meta Tags
+- Accessibility (ARIA)
+- DOM Structure
+- SEO Basics
+- Data Attributes
 
 ## Useful Resources
-- [Official Rust Documentation](https://doc.rust-lang.org/book/)
-- [Rust By Example](https://doc.rust-lang.org/rust-by-example/)
-- [Rust Playground](https://play.rust-lang.org/)
+- [MDN HTML Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
+- [HTML Living Standard](https://html.spec.whatwg.org/)
 
 ---
 
-**Happy Coding! 🦀**
+**Happy Coding! 🚀**
